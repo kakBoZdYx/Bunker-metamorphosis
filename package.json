@@ -5,6 +5,7 @@
     "cookie-parser": "^1.4.6",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
+    "heroku": "^7.60.2",
     "mongodb": "^4.7.0"
   },
   "scripts": {
@@ -13,7 +14,6 @@
   "name": "bunker-metamorphosis",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kakBoZdYx/Bunker-metamorphosis.git"
