@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="../html-sources/css/main.css">
-</head>
-<body>
-    <div class="head">
-        <ul class="header_menu">
-            <li> <a href="/"> Главная </a></li>
-            <li>Button 1</li>
-            <li>Button 2</li>
-            <% if (req.session.user) {%>
-                <li>Войти</li>
-            <% } else {%>
-                <li> <a href="/user/profile"> Профиль </a></li>
-            <% } %>
-        </ul>
-    </div>
+<%- include('base_views/header') -%>
     <div class="content">
 
     </div>
-</body>
-</html>
+<%- include('base_views/footer') -%>

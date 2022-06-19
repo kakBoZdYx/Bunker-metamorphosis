@@ -2,3 +2,24 @@
     margin: 0 0 0 0;
     padding: 0 0 0 0 
 }
+
+.head_menu{
+    height: 30px;
+    width: 100%;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 18pt;
+    border-bottom: 1px, solid, black;
+    margin-bottom: 1%;
+}
+
+.head_menu > ul > li {
+    float: left;
+    list-style: none;
+    margin-left: 3%;
+    vertical-align: middle;
+}
+
+a, a:hover { 
+    text-decoration: none;
+    color: black;
+}
