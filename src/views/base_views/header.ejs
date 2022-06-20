@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><% pageName %></title>
+    <title><%- pageName -%></title>
     <link rel="stylesheet" href="../html-sources/css/main.css">
 </head>
 <body>
@@ -14,11 +14,6 @@
             <li>Бункер</li>
             <li>Распределение команд</li>
             <li>Клозы</li>
-            <% if(!sessionData.user && pageName != 'profile') { %>
-            <li><a href="/user/login">Войти</a></li>
-            <% } else if(sessionData.user && pageName != 'profile') { %>
-            <li><a href="/user/profile">Профиль</a></li>
-            <% } else if(sessionData.user && pageName != 'profile') { %>
-            <% } %>
+            <li><a href="/user/profile">Кабинет</a></li>
         </ul>
     </nav>

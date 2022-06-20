@@ -27,16 +27,12 @@ app.set('views', path.join(__dirname + "/src/views"))
 const uri = "mongodb+srv://kurivyan:Qqwerty123@cluster0.hflo0.mongodb.net/?retryWrites=true&w=majority"; 
 const mongoClient = new mongodb.MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: mongodb.ServerApiVersion.v1 });
 
-
 //user_rout
 const user = require(path.join(__dirname, '/src/routs/user.js'))
 app.use('/user', user)
-
-
-app.get('/test', (req, res) => {
-        console.log(req.session)
-        res.redirect('/')
-})
+//admin_rout
+const admin = require(path.join(__dirname, '/src/routs/admin.js'))
+app.use('/admin', admin)
 
 app.get('/', (req, res) => {
         sessionData = req.session
